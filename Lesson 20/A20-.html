@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <p style="font-size: 40px;">
+            Math
+        </p>
+        <hr>
+        <br><br><label for="">First Number:</label><input type="number" id="one">
+        <br><br><label for="">Second Number:</label><input type="number" id="two">
+        <br><br>
+        <button onclick="add()">Add</button>
+        <button onclick="subtract()">Subtract</button>
+        <button onclick="multiply()">Multiply</button>
+        <button onclick="divide()">Divide</button>
+        <br><br><p id="result">Answer:</p>
+        <script>
+            function add(){
+                a= parseInt(document.getElementById("one").value)
+                b= parseInt(document.getElementById("two").value)
+                ans = a+b
+                document.getElementById("result").innerHTML= ans
+            }
+            function subtract(){
+                a= parseInt(document.getElementById("one").value)
+                b= parseInt(document.getElementById("two").value)
+                ans = a-b
+                document.getElementById("result").innerHTML= ans
+            }
+            function multiply(){
+                a= parseInt(document.getElementById("one").value)
+                b= parseInt(document.getElementById("two").value)
+                ans = a*b
+                document.getElementById("result").innerHTML= ans
+            }
+            function divide(){
+                a= parseInt(document.getElementById("one").value)
+                b= parseInt(document.getElementById("two").value)
+                ans = a/b
+                document.getElementById("result").innerHTML= ans
+            }
+        </script>
+    </center>
+</body>
+</html>
